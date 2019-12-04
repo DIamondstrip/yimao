@@ -1,0 +1,51 @@
+.boss {
+  min-height: calc(100vh - 30px);
+  min-width: 1200px;
+  width: 100%;
+  & > .the-body {
+    display: flex;
+    min-height: calc(100vh - 45px);
+    & > .the-menu-box {
+      display: flex;
+      flex-direction: column;
+      .collapsed-box {
+        padding: 8px 0;
+        text-align: center;
+        background-color: #001529;
+        .collapsed-icon {
+          color: #ccc;
+          cursor: pointer;
+          &:hover {
+            color: #fff;
+          }
+        }
+        &.open {
+          text-align: right;
+          padding: 8px;
+        }
+      }
+      .the-menu {
+        &.open {
+          width: 256px;
+        }
+        flex: 1;
+        &.ant-menu-inline-collapsed {
+          & > .ant-menu-submenu {
+            & > .ant-menu-submenu-title {
+              padding: 0 !important;
+              text-align: center !important;
+            }
+          }
+        }
+      }
+    }
+    .flex-auto {
+      position: relative;
+      flex: auto;
+    }
+    .flex-none {
+      position: relative;
+      flex: none;
+    }
+  }
+}
