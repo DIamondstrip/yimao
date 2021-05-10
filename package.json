@@ -23,7 +23,7 @@
     "echarts": "^4.1.0",
     "history": "^4.7.2",
     "immutable": "^3.8.2",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "moment": "^2.22.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
